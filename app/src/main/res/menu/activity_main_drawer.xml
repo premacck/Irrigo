@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single" android:title="@string/preferences">
+        <item
+            android:id="@+id/nav_water_requirement"
+            android:icon="@drawable/ic_water_requirement"
+            android:title="@string/water_requirement" />
+        <item
+            android:id="@+id/nav_sprinkler"
+            android:icon="@drawable/ic_sprinkler"
+            android:title="@string/sprinkler" />
+        <item
+            android:id="@+id/nav_lateral"
+            android:icon="@drawable/ic_lateral"
+            android:title="@string/lateral" />
+        <item
+            android:id="@+id/nav_submain"
+            android:icon="@drawable/ic_submain"
+            android:title="@string/submain" />
+        <item
+            android:id="@+id/nav_main_line"
+            android:icon="@drawable/ic_main_line"
+            android:title="@string/main_line" />
+        <item
+            android:id="@+id/nav_layout"
+            android:icon="@drawable/ic_layout"
+            android:title="@string/layout" />
+        <item
+            android:id="@+id/nav_pump"
+            android:icon="@drawable/ic_pump"
+            android:title="@string/pump" />
+        <item
+            android:id="@+id/nav_quotation"
+            android:icon="@drawable/ic_quotation"
+            android:title="@string/quotation" />
+        <item
+            android:id="@+id/nav_benefit_cost"
+            android:icon="@drawable/ic_benefit_cost"
+            android:title="@string/benefit_cost" />
+    </group>
+
+<!--    <item android:title="@string/communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/share" />
+        </menu>
+    </item>-->
+
+<!--    <item android:title="@string/about">
+        <menu>
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/about_us" />
+        </menu>
+    </item>-->
+</menu>
