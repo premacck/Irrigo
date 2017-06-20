@@ -1,7 +1,5 @@
 package com.prembros.irrigo;
 
-import android.content.Context;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.ActionBar;
@@ -21,19 +19,18 @@ public class FragmentLayout extends Fragment {
 
     private ActionBar actionBar;
 
-    private OnLayoutInteractionListener mListener;
+//    private OnLayoutInteractionListener mListener;
 
     public FragmentLayout() {
         // Required empty public constructor
     }
 
     public static FragmentLayout newInstance() {
-        FragmentLayout fragment = new FragmentLayout();
-//        Bundle args = new Bundle();
+        //        Bundle args = new Bundle();
 //        args.putString(ARG_PARAM1, param1);
 //        args.putString(ARG_PARAM2, param2);
 //        fragment.setArguments(args);
-        return fragment;
+        return new FragmentLayout();
     }
 
     @Override
@@ -57,31 +54,31 @@ public class FragmentLayout extends Fragment {
         return rootView;
     }
 
-    public void onButtonPressed(Uri uri) {
-        if (mListener != null) {
-            mListener.onLayoutInteraction(uri);
-        }
-    }
+//    public void onButtonPressed(Uri uri) {
+//        if (mListener != null) {
+//            mListener.onLayoutInteraction(uri);
+//        }
+//    }
 
-    @Override
-    public void onAttach(Context context) {
-        super.onAttach(context);
-        if (context instanceof OnLayoutInteractionListener) {
-            mListener = (OnLayoutInteractionListener) context;
-        } else {
-            throw new RuntimeException(context.toString()
-                    + " must implement OnLayoutInteractionListener");
-        }
-    }
+//    @Override
+//    public void onAttach(Context context) {
+//        super.onAttach(context);
+//        if (context instanceof OnLayoutInteractionListener) {
+//            mListener = (OnLayoutInteractionListener) context;
+//        } else {
+//            throw new RuntimeException(context.toString()
+//                    + " must implement OnLayoutInteractionListener");
+//        }
+//    }
 
-    @Override
-    public void onDetach() {
-        super.onDetach();
-//        actionBar.setTitle(previousTitle);
-        mListener = null;
-    }
+//    @Override
+//    public void onDetach() {
+//        super.onDetach();
+////        actionBar.setTitle(previousTitle);
+//        mListener = null;
+//    }
 
-    interface OnLayoutInteractionListener {
-        void onLayoutInteraction(Uri uri);
-    }
+//    interface OnLayoutInteractionListener {
+//        void onLayoutInteraction(Uri uri);
+//    }
 }

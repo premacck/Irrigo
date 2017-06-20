@@ -1,7 +1,5 @@
 package com.prembros.irrigo;
 
-import android.content.Context;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.ActionBar;
@@ -21,7 +19,7 @@ public class FragmentQuotation extends Fragment {
 
     private ActionBar actionBar;
 
-    private OnQuotationInteractionListener mListener;
+//    private OnQuotationInteractionListener mListener;
 
     public FragmentQuotation() {
         // Required empty public constructor
@@ -56,31 +54,31 @@ public class FragmentQuotation extends Fragment {
         return rootView;
     }
 
-    public void onButtonPressed(Uri uri) {
-        if (mListener != null) {
-            mListener.onQuotationInteraction(uri);
-        }
-    }
+//    public void onButtonPressed(Uri uri) {
+//        if (mListener != null) {
+//            mListener.onQuotationInteraction(uri);
+//        }
+//    }
 
-    @Override
-    public void onAttach(Context context) {
-        super.onAttach(context);
-        if (context instanceof OnQuotationInteractionListener) {
-            mListener = (OnQuotationInteractionListener) context;
-        } else {
-            throw new RuntimeException(context.toString()
-                    + " must implement OnQuotationInteractionListener");
-        }
-    }
+//    @Override
+//    public void onAttach(Context context) {
+//        super.onAttach(context);
+//        if (context instanceof OnQuotationInteractionListener) {
+//            mListener = (OnQuotationInteractionListener) context;
+//        } else {
+//            throw new RuntimeException(context.toString()
+//                    + " must implement OnQuotationInteractionListener");
+//        }
+//    }
 
-    @Override
-    public void onDetach() {
-        super.onDetach();
-//        actionBar.setTitle(previousTitle);
-        mListener = null;
-    }
+//    @Override
+//    public void onDetach() {
+//        super.onDetach();
+////        actionBar.setTitle(previousTitle);
+//        mListener = null;
+//    }
 
-    interface OnQuotationInteractionListener {
-        void onQuotationInteraction(Uri uri);
-    }
+//    interface OnQuotationInteractionListener {
+//        void onQuotationInteraction(Uri uri);
+//    }
 }

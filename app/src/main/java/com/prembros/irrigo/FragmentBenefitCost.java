@@ -1,7 +1,5 @@
 package com.prembros.irrigo;
 
-import android.content.Context;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.ActionBar;
@@ -19,9 +17,7 @@ public class FragmentBenefitCost extends Fragment {
 //    private String mParam2;
     private String previousTitle;
 
-    private ActionBar actionBar;
-
-    private OnBenefitCostInteractionListener mListener;
+    //    private OnBenefitCostInteractionListener mListener;
 
     public FragmentBenefitCost() {
         // Required empty public constructor
@@ -48,7 +44,7 @@ public class FragmentBenefitCost extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_benefit_cost, container, false);
-        actionBar = ((AppCompatActivity) getActivity()).getSupportActionBar();
+        ActionBar actionBar = ((AppCompatActivity) getActivity()).getSupportActionBar();
         if (actionBar != null && actionBar.getTitle() != null) {
             previousTitle = actionBar.getTitle().toString();
             actionBar.setTitle(getString(R.string.benefit_cost));
@@ -56,31 +52,31 @@ public class FragmentBenefitCost extends Fragment {
         return rootView;
     }
 
-    public void onButtonPressed(Uri uri) {
-        if (mListener != null) {
-            mListener.onBenefitCostInteraction(uri);
-        }
-    }
+//    public void onButtonPressed(Uri uri) {
+//        if (mListener != null) {
+//            mListener.onBenefitCostInteraction(uri);
+//        }
+//    }
 
-    @Override
-    public void onAttach(Context context) {
-        super.onAttach(context);
-        if (context instanceof OnBenefitCostInteractionListener) {
-            mListener = (OnBenefitCostInteractionListener) context;
-        } else {
-            throw new RuntimeException(context.toString()
-                    + " must implement OnBenefitCostInteractionListener");
-        }
-    }
+//    @Override
+//    public void onAttach(Context context) {
+//        super.onAttach(context);
+//        if (context instanceof OnBenefitCostInteractionListener) {
+//            mListener = (OnBenefitCostInteractionListener) context;
+//        } else {
+//            throw new RuntimeException(context.toString()
+//                    + " must implement OnBenefitCostInteractionListener");
+//        }
+//    }
 
-    @Override
-    public void onDetach() {
-        super.onDetach();
-//        actionBar.setTitle(previousTitle);
-        mListener = null;
-    }
+//    @Override
+//    public void onDetach() {
+//        super.onDetach();
+////        actionBar.setTitle(previousTitle);
+//        mListener = null;
+//    }
 
-    interface OnBenefitCostInteractionListener {
-        void onBenefitCostInteraction(Uri uri);
-    }
+//    interface OnBenefitCostInteractionListener {
+//        void onBenefitCostInteraction(Uri uri);
+//    }
 }

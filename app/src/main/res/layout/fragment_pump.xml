@@ -1,10 +1,10 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/colorDisabledLight"
+    android:id="@+id/scrollView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FragmentWaterRequirement">
+    tools:context=".FragmentCropSelection">
 
     <LinearLayout
         android:orientation="vertical"
@@ -12,6 +12,7 @@
         android:layout_height="wrap_content"
         android:padding="@dimen/activity_horizontal_margin">
 
+<!--
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -43,6 +44,7 @@
                 android:hint="@string/area_of_field"/>
 
         </android.support.design.widget.TextInputLayout>
+-->
 
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
@@ -87,7 +89,7 @@
                 android:textColor="@color/colorSecondaryText"/>
 
             <CheckBox
-                android:id="@+id/check_disc_screen_filter"
+                android:id="@+id/check_disc_filter"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="@dimen/activity_horizontal_margin"

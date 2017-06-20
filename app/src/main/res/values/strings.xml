@@ -5,7 +5,7 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
-    <string name="water_requirement">Water requirement</string>
+    <string name="crop_selection">Crop Selection</string>
     <string name="sprinkler">Sprinkler</string>
     <string name="lateral">Lateral</string>
     <string name="submain">Submain</string>
@@ -22,113 +22,121 @@
 
     <string-array name="crop_name">
         <item>Select crop name</item>
-        <item>Crop 1</item>
-        <item>Crop 2</item>
-        <item>Crop 3</item>
-        <item>Crop 4</item>
-        <item>Crop 5</item>
-        <item>Crop 6</item>
-        <item>Crop 7</item>
-        <item>Crop 8</item>
+        <item>Onion</item>
+        <item>Pea</item>
+        <item>Cabbage</item>
+        <item>Chilli</item>
+        <item>Cauliflower</item>
+        <item>Brinjal</item>
+        <item>Potato</item>
+        <item>Tomato</item>
+        <item>Wheat</item>
+        <item>Green Gram</item>
+        <item>Groundnut</item>
+        <item>Mustard</item>
+        <item>Cotton</item>
+        <item>Sugarcane</item>
+        <item>Maize</item>
+        <item>Mango</item>
+        <item>Coconut</item>
+        <item>Cashew</item>
+    </string-array>
+
+    <string-array name="soil_type">
+        <item>Select soil type</item>
+        <item>Low</item>
+        <item>Medium</item>
+        <item>Heavy</item>
     </string-array>
 
     <string-array name="default_area">
         <item>Select default area</item>
         <item>50 X 50</item>
-        <item>50 X 50</item>
-        <item>50 X 50</item>
-        <item>50 X 50</item>
-        <item>50 X 50</item>
-        <item>50 X 50</item>
-        <item>50 X 50</item>
-        <item>50 X 50</item>
+        <item>100 X 50</item>
+        <item>100 X 100</item>
+        <item>100 X 150</item>
+        <item>150 X 150</item>
+        <item>200 X 200</item>
     </string-array>
 
     <string-array name="sprinkler_name">
         <item>Select Sprinkler name</item>
-        <item>Sprinkler 1</item>
-        <item>Sprinkler 2</item>
-        <item>Sprinkler 3</item>
-        <item>Sprinkler 4</item>
-        <item>Sprinkler 5</item>
-        <item>Sprinkler 6</item>
-        <item>Sprinkler 7</item>
-        <item>Sprinkler 8</item>
-    </string-array>
-
-    <string-array name="nozzle_type">
-        <item>Select Nozzle type</item>
-        <item>Nozzle 1</item>
-        <item>Nozzle 2</item>
-        <item>Nozzle 3</item>
-        <item>Nozzle 4</item>
-        <item>Nozzle 5</item>
-        <item>Nozzle 6</item>
-        <item>Nozzle 7</item>
-        <item>Nozzle 8</item>
-    </string-array>
-
-    <string-array name="pressure">
-        <item>Select Pressure</item>
-        <item>Pressure 1</item>
-        <item>Pressure 2</item>
-        <item>Pressure 3</item>
-        <item>Pressure 4</item>
-        <item>Pressure 5</item>
-        <item>Pressure 6</item>
-        <item>Pressure 7</item>
-        <item>Pressure 8</item>
+        <item>Micro</item>
+        <item>Mini</item>
+        <item>Rail Gun</item>
     </string-array>
 
     <string-array name="lateral_size">
         <item>Select Lateral size (mm)</item>
-        <item>Lateral size 1</item>
-        <item>Lateral size 2</item>
-        <item>Lateral size 3</item>
-        <item>Lateral size 4</item>
-        <item>Lateral size 5</item>
-        <item>Lateral size 6</item>
-        <item>Lateral size 7</item>
-        <item>Lateral size 8</item>
+        <item>12</item>
+        <item>16</item>
+        <item>20</item>
+        <item>32</item>
+        <item>40</item>
+        <item>50</item>
+        <item>63</item>
+        <item>75</item>
+        <item>90</item>
+        <item>110</item>
+        <item>125</item>
+        <item>140</item>
+        <item>160</item>
+        <item>180</item>
     </string-array>
 
     <string-array name="submain_size">
         <item>Select Submain size (mm)</item>
-        <item>Submain size 1</item>
-        <item>Submain size 2</item>
-        <item>Submain size 3</item>
-        <item>Submain size 4</item>
-        <item>Submain size 5</item>
-        <item>Submain size 6</item>
-        <item>Submain size 7</item>
-        <item>Submain size 8</item>
+        <item>40</item>
+        <item>50</item>
+        <item>63</item>
+        <item>75</item>
+        <item>90</item>
+        <item>110</item>
+        <item>125</item>
+        <item>140</item>
+        <item>160</item>
+        <item>180</item>
+        <item>200</item>
+        <item>225</item>
+        <item>250</item>
+        <item>280</item>
     </string-array>
 
     <string-array name="main_line_size">
         <item>Select Main line size (mm)</item>
-        <item>Main line size 1</item>
-        <item>Main line size 2</item>
-        <item>Main line size 3</item>
-        <item>Main line size 4</item>
-        <item>Main line size 5</item>
-        <item>Main line size 6</item>
-        <item>Main line size 7</item>
-        <item>Main line size 8</item>
+        <item>40</item>
+        <item>50</item>
+        <item>63</item>
+        <item>75</item>
+        <item>90</item>
+        <item>110</item>
+        <item>125</item>
+        <item>140</item>
+        <item>160</item>
+        <item>180</item>
+        <item>200</item>
+        <item>225</item>
+        <item>250</item>
+        <item>280</item>
+        <item>300</item>
+        <item>315</item>
+        <item>340</item>
+        <item>360</item>
     </string-array>
 
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="peak_water_requirement_mm_day">Peak water requirement (mm/day)</string>
+    <string name="daily_water_requirement_mm_day">Daily water requirement (mm/day)</string>
     <string name="From_given_configurations">From given configurations</string>
     <string name="select_default_area">Select default area</string>
     <string name="enter_area_manually">Enter area manually</string>
     <string name="length_meter">Length (meter)</string>
     <string name="width_meter">Width (meter)</string>
-    <string name="total_water_requirement_for_field">Total water requirement for field (liter/day)</string>
+    <string name="total_water_requirement">Total water requirement (ltr/day)</string>
     <string name="start">Start</string>
     <string name="sprinkler_specifications">Sprinkler Specifications</string>
-    <string name="wetted_diameter">Wetted Diameter</string>
+    <string name="wetted_diameter">Wetted Diameter (mtr)</string>
     <string name="discharge">Discharge (lph)</string>
-    <string name="spray_diameter">Spray diameter</string>
+    <!--<string name="spray_diameter">Spray diameter (mtr)</string>-->
     <string name="total_no_of_sprinklers">Total no. of Sprinklers</string>
     <string name="total_flow_of_control">Total flow of control</string>
     <string name="crop_name">Crop name</string>
@@ -151,4 +159,14 @@
     <string name="ventury">Ventury</string>
     <string name="pump_horse_power">Pump horse power</string>
     <string name="irrigation_time">Irrigation_time</string>
+    <string name="invalid_range">Invalid range</string>
+    <string name="select_pressure">Select Pressure</string>
+    <string name="select_nozzle_type">Select Nozzle Type</string>
+    <string name="alert">Alert!</string>
+    <string name="alert_body">Please select the proper values first before moving on to next page.</string>
+    <string name="invalid_value">Invalid Value</string>
+    <string name="submain_headloss">Submain Headloss</string>
+    <string name="main_line_headloss">Main line headloss</string>
+    <string name="main_line_length">Main line length</string>
+    <string name="main_line_diameter">Main line diameter</string>
 </resources>
